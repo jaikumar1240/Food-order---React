@@ -1,8 +1,12 @@
+import Cart from '../Cart/Cart';
 import CartIcon from '../Cart/CartIcon';
+import  ReactDOM  from 'react-dom';
 import classes from './HeaderCartButton.module.css';
-const HeaderCartButton = () => {
+const HeaderCartButton = (props) => {
+    const openCart =()=>{
+    }
     return (
-        <button className={classes.button}>
+        <button onClick={props.onClick} className={classes.button}>
             <span className={classes.icon}>
                 <CartIcon />
             </span>
